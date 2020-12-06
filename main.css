@@ -15,7 +15,7 @@ body {
 }
 
 .wrapper {
-  padding-top: 4rem;
+  padding-top: 1rem;
   width: 90%;
   margin: 0 auto;
   text-align: center;
@@ -23,13 +23,21 @@ body {
 
 .quote {
   font-family: 'Julius Sans One', sans-serif;
-  font-size: 1.2rem; 
+  font-size: 1.2rem;
+  text-shadow: 1px 1px 2px #4d4d4d;
 }
-
+img {
+  height:20px;
+  float:right;
+}
+header{
+  padding-top: 10px;
+}
 .author {
   font-family: 'Crimson Text', serif;
   font-size: 1rem;
   font-style: italic;
+  text-shadow: 1px 1px 2px #4d4d4d;
 }
 @media screen and (min-width:801px) {
   .quote {
@@ -39,3 +47,21 @@ body {
     font-size:1.5rem;
   }
   
+  @media screen and (min-width:1501px) {
+  .quote {
+    font-size:3.5rem;
+  }
+  .author{
+    font-size:2.5rem;
+  }
+  
+.language {
+width: 200px;
+height: auto;
+}
+
+
+img:hover {
+  transform: scale(1.5);
+  transition: all 0.5s ease-in-out;
+}
